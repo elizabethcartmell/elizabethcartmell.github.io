@@ -1,0 +1,108 @@
+body{
+  background-color: #fffafa;
+  background-attachment: fixed;
+  font-family: 'Montserrat', serif;
+}
+
+
+.jumbotron {
+  position: relative;
+  width:100%;
+  height: 100%;
+  padding-top: 90px;
+  text-align: center;
+  background-color:rgba(0, 0, 0, 0.25);
+  color: white;
+  background:url("images/image10.jpg") no-repeat center top scroll;
+  background-size: 100% auto;
+  padding-bottom: 40px;
+}
+
+.jumbotron p {
+  margin-bottom: 1em;
+}
+
+.jumbotron h1 {
+  font-family: 'Bowlby One SC', sans-serif;
+  font-size: 170px;
+  color: #fffafa;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.jumbotron h2 {
+  color: #fffafa;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.navbar-inverse {
+  color: #49311C;
+  background-color: #fffafa;
+}
+
+.btn-twitter {
+  background-color: #00acee;
+  border-color: #009ad5;
+  color: white;
+}
+
+.btn-facebook {
+  background-color: #4868ac;
+  border-color: #314776;
+  color: white;
+}
+
+.btn-pinterest {
+  background-color: #b62f26;
+  border-color: #b62f26;
+  color: white;
+}
+
+
+
+#clockdiv{
+  font-family: sans-serif;
+  color: #fffafa;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+#clockdiv > div{
+  padding: 10px;
+  border-radius: 3px;
+  background: orange;
+  display: inline-block;
+}
+
+#clockdiv div > span{
+  padding: 15px;
+  border-radius: 3px;
+  background: gray;
+  display: inline-block;
+}
+
+.smalltext{
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.btn-outline {
+    background: none;
+    color: #fffafa;
+    padding: 12px 22px;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fffafa;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}

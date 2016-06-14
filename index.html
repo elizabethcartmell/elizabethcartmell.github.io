@@ -1,494 +1,205 @@
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <title>Human Whisperers</title>
+    <link href='dist/css/bootstrap.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    </head>-->
+
 <!DOCTYPE html>
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<title>Elizabeth Cartmell</title>
-		<meta name="description" content="Worthy a Bootstrap-based, Responsive HTML5 Template">
-		<meta name="author" content="htmlcoder.me">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-		<!-- Mobile Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUSH</title>
 
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link href='dist/css/bootstrap.css' rel='stylesheet'>
 
-		<!-- Web Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-		<!-- Bootstrap core CSS -->
-		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <!-- <link href="jumbotron.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="main.css">
 
-		<!-- Font Awesome CSS -->
-		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
-		<!-- Plugins -->
-		<link href="css/animations.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bowlby+One+SC&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-		<!-- Worthy core CSS file -->
-		<link href="css/style.css" rel="stylesheet">
+  </head>
 
-		<!-- Custom css --> 
-		<link href="css/custom.css" rel="stylesheet">
-	</head>
+  <body>
 
-	<body class="no-trans">
-		<!-- scrollToTop -->
-		<!-- ================ -->
-		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
 
-		<!-- header start -->
-		<!-- ================ --> 
-		<header class="header fixed clearfix navbar navbar-fixed-top">
-			<div class="container">
-				<div class="row">
-					
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">RUSH</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right social">
+                <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-lg fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-lg fa-linkedin"></i></a></li>
+            </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
 
-						<!-- header-right start -->
-						<!-- ================ -->
-						<div class="header-right clearfix">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>PROMPT</h1>
+        <h2>ON THE DAY DEALS</h2>
+        <p><a class="btn btn-default btn-outline btn-lg">Large Button</a></p>
 
-							<!-- main-navigation start -->
-							<!-- ================ -->
-							<div class="main-navigation animated">
+        
+<div id="clockdiv">
+  <h3>Booking opens in</h3>
+  <div>
+    <span class="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span class="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span class="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+</div>
 
-								<!-- navbar start -->
-								<!-- ================ -->
-								<nav class="navbar navbar-default" role="navigation">
-									<div class="container-fluid">
+      </div>
+    </div>
 
-										<!-- Toggle get grouped for better mobile display -->
-										<div class="navbar-header">
-											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-												<span class="sr-only">Toggle navigation</span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-											</button>
-										</div>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Wicked</h2>
+          <img src="images/wicked.jpg" alt="wicked" style="width:304px;height:228px;">
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">Buy now &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Jersey Boys</h2>
+          <img src="images/jersey_boys.jpg" alt="wicked" align="middle" style="width:304px;height:228px;">
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">Buy now &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Sunny Afternoon</h2>
+          <img src="images/sunny_afternoon.jpg" alt="wicked" style="width:304px;height:228px;">
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">Buy now &raquo;</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Wicked</h2>
+          <img src="images/wicked.jpg" alt="wicked" style="width:304px;height:228px;">
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">Buy now &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Jersey Boys</h2>
+          <img src="images/jersey_boys.jpg" alt="wicked" align="middle" style="width:304px;height:228px;">
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. </p>
+          <p><a class="btn btn-default" href="#" role="button">Buy now &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Sunny Afternoon</h2>
+          <img src="images/sunny_afternoon.jpg" alt="wicked" style="width:304px;height:228px;">
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in.</p>
+          <p><a class="btn btn-default" href="#" role="button">Buy now &raquo;</a></p>
+        </div>
+      </div>
 
-										<!-- Collect the nav links, forms, and other content for toggling -->
-										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
-											<ul class="nav navbar-nav navbar-right">
-												<li class="active"><a href="#banner">Home</a></li>
-												<li><a href="#about">About</a></li>
-												<li><a href="#keyskills">Key Skills</a></li>
-												<li><a href="#employmenthistory">Employment History</a></li>
-												<li><a href="#experience">Experience and Qualifications</a></li>
-												<li><a href="#contact">Contact</a></li>
-											</ul>
-										</div>
+      <hr>
 
-									</div>
-								</nav>
-								<!-- navbar end -->
+      <footer>
+        <p>&copy; 2016 StudentRush</p>
+      </footer>
+    </div> <!-- /container -->
 
-							</div>
-							<!-- main-navigation end -->
 
-						
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+    function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
 
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- header end -->
+function initializeClock(id, endtime, message) {
+  var clock = document.getElementById(id);
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
 
-		<!-- banner start -->
-		<!-- ================ -->
-		<div id="banner" class="banner">
-			<div class="banner-image"></div>
-			<div class="banner-caption">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
-							<h1 class="text-center">CURRICULUM <span>VITAE</span></h1>
-							<h2 class="text-center">Elizabeth Cartmell</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- banner end -->
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
 
-		<!-- section start -->
-		<!-- ================ -->
-		<div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1 id="about" class="title text-center">About <span>Elizabeth Cartmell</span></h1>
-						<p class="lead text-center">Problem-solver. Creative. High integrity.</p>
-						<div class="space"></div>
-						<div class="row">
-							<div class="col-md-6">
-								<img src="images/section-image-1.jpg" alt="">
-								<div class="space"></div>
-							</div>
-							<div class="col-md-6">
-								<p>Having previously worked in finance, Elizabeth is currently bringing her unique mix of analysis, organisational skills and creativity to ATG Tickets in the heart of London's West End. With a direct and supportive interaction style, Elizabeth focuses on both people and strategy to deliver a stong, client-focused service. </p>
-								</br>
-								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> A natural leader who encourages co-ordination and strong communication within a team.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> An avid learner with a strong work ethic and excellent social skills.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> A team player with a proven record of success.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> A high achiever with many relevant qualifications and interests.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> A graduate of Van Mildert College, Durham Law School – rated as one of the top three law schools in the country.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Currently working in ticketing for the market-leading theatre company.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Undertaking additional studies in web design and coding.</li>
-								</ul>
-							</br>
-								<p>When not working in the West End, Elizabeth is usually found somersaulting and backflipping in the gym. A two-time national cheerleading champion, she is currently training with her team to defend their title for the third year in a row.</p>
-							</div>
-						</div>
-					
-							
-											</div>
-										</div>
-									</div>
-								</div>
-					
-		<!-- section end -->
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-		<!-- section start -->
-		<!-- ================ -->
-		<div class="section translucent-bg bg-image-1 blue">
-			<div class="container object-non-visible" data-animation-effect="fadeIn">
-				<h1 id="keyskills"  class="text-center title">Key Skills</h1>
-				<div class="space"></div>
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="media">
-							<div class="media-body text-right">
-								<h4 class="media-heading">Prioritisation</h4>
-								<p>Ability to work well under pressure, prioritise and meet deadlines both as an individual and as part of a team.</p>
-							</div>
-							<div class="media-right">
-								<i class="fa fa-cog"></i>
-							</div>
-						</div>
-						<div class="media">
-							<div class="media-body text-right">
-								<h4 class="media-heading">Communication</h4>
-								<p>Consistently communicates in a clear and concise manner - verbal, written and electronic.</p>
-							</div>
-							<div class="media-right">
-								<i class="fa fa-cog"></i>
-							</div>
-						</div>
-						<div class="media">
-							<div class="media-body text-right">
-								<h4 class="media-heading">Ideas Driven Approach</h4>
-								<p>Continuously looking to improve and innovate by taking a proactive approach to problem-solving.</p>
-							</div>
-							<div class="media-right">
-								<i class="fa fa-cog"></i>
-							</div>
-						</div>
-						<div class="media">
-							<div class="media-body text-right">
-								<h4 class="media-heading">Computer Skills</h4>
-								<p>Excel and HTML/CSS specialist with excellent knowledge of computer softwarew and how to process information/data efficiently.</p>
-							</div>
-							<div class="media-right">
-								<i class="fa fa-cog"></i>
-							</div>
-						</div>
-					</div>
-					<div class="space visible-xs"></div>
-					<div class="col-sm-6">
-						<div class="media">
-							<div class="media-left">
-								<i class="fa fa-cog"></i>
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">Detail-oriented</h4>
-								<p>Outstanding attention to detail coupled with research skills and the ability to understand and proof data quickly and efficiently.</p>
-							</div>
-						</div>
-						<div class="media">
-							<div class="media-left">
-								<i class="fa fa-cog"></i>
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">Customer Service</h4>
-								<p>Excellent customer service and interpersonal skills. Deals well in client-facing situations and strong teamwork skills based on trust.</p>
-								<p></p>
-								
-							</div>
-						</div>
-						<div class="media">
-							<div class="media-left">
-								<i class="fa fa-cog"></i>
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">Flexibility</h4>
-								<p>Flexibile skill set and comfortable in new environments and situations. Readily learns new skills whenever required.</p>
-							</div>
-						</div>
-						<div class="media">
-							<div class="media-left">
-								<i class="fa fa-cog"></i>
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">International</h4>
-								<p>Conversational French (A Level standard) and working knowledge of German. Travelled extensively and comfortable with different cultures.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- section end -->
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+      document.getElementById(id).innerHTML = message;
+    }
+  }
 
-		<!-- section start -->
-		<!-- ================ -->
-		<div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1 id="employmenthistory" class="title text-center">Employment History</span></h1>
-						
-						<div class="space"></div>
-						
-						<div class="row">
-							<div class="col-md-6">
-								<p></p>
-								<p>After completing her law degree at Durham University, Elizabeth moved into a financial role as Business Administrator in the Finance Hub within HM Prison Service. Always ready for a challenge, she braved prison corridors and spearheaded an internal campaign to help the prison achieve financial break-even on a data project. She also met most the demanding 'clients' of her career and tested her communication skills by explaining complex financial information to inmates who were often illiterate and foreign nationals.    </p>
-								<p>Leaving finance behind, she then moved to London to follow her passion for theatre. Now working at ATG Tickets, she works on a variety of different projects both in the UK and abroad, helping to facilitate projects and deliver results alongside supporting her team on a day-to-day basis.  </p>
-								<p>Elizabeth puts her time to good use outside work by working on ad-hoc digital marketing and web development projects and receiving mentoring from industry professionals to help develop her marketing skills.  
-							</div>
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
 
-							<div class="col-md-6">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h4 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-													Ticketing Operations Assistant - ATG Tickets
-												</a>
-											</h4>
-										</div>
-										<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-											<div class="panel-body"><ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Manage the assignment and distribution of work for the Ticketing Operations team.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Monitor team performance and individual performance against deadlines.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Develop, analyse and issue regular statistical data on department performance to the
-management team.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Develop bespoke reporting tools e.g. performance dashboard in Excel.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Provide system reports covering ticket sales to producers.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Run team meetings when Manager is not available.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Liaise with ATG staff and external clients to ensure service level agreements are metand excellent customer service is provided.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Administrative contact for the Ticketing Operations Team - correspondence central contact, develops rotas, minutes and agendas.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Support for the Theatre Card team.</li>
-								</ul>
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingTwo">
-											<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-													Business Administrator - HM Prison Service
-												</a>
-											</h4>
-										</div>
-										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-											<div class="panel-body"> <ul class="list-unstyled">	<li><i class="fa fa-caret-right pr-10 text-colored"></i> Organise, produce, process
-and maintain accurate requisitions and reconciliations on the finance database.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Maintain and check establishment databases, manual filing systems, invoices and logs of information, responding within agreed timescales and producing reports as required.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Act as contact point for all communications to the finance team.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Prioritise and distribute communications relating to the finance department internally throughout the prison.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Correspond with other HMP establishments and external agencies to ensure that they are aware of necessary communications.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Act as secretary to meetings as required including organising agenda, taking and distributing minutes and action points</li>
-								</ul>
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingThree">
-											<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-													Office manager (Part-time during Studies) - Jay-Em Studios
-												</a>
-											</h4>
-										</div>
-										<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-											<div class="panel-body"> <ul class="list-unstyled">	<li><i class="fa fa-caret-right pr-10 text-colored"></i> Secretarial and administrative work at a dance studio which included running the office, managing the shop and updating the studio website.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Successfully implemented a new computerised database system to help improve efficiency and create a better child protection system.</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i> Served as a key liaison when planning dance trips at Disneyland Paris and Blackpool Winter Gardens.</li>
-								</ul>
-												
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- section end -->
+var deadline = 'June 14 2016 14:23:00 GMT+0100';
+initializeClock('clockdiv', deadline,'BOOKING OPEN');
 
-		<!-- section start -->
-		<!-- ================ -->
-		<div class="section translucent-bg bg-image-2 pb-clear">
-			<div class="container object-non-visible" data-animation-effect="fadeIn">
-				<h1 id="experience" class="title text-center">Experience and Qualifications</h1>
-				<div class="space"></div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="media testimonial">
-							<div class="media-left">
-								<img src="images/testimonial-3.png" alt="">
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">Degree (2010 – 2013)</h3>
-								<blockquote>
-									<p>2:2 degree in Law (LLB)</p>
-									<p>Strong commercial focus having studied Employment, Company and Corporate Law.</p>
-									<footer><cite title="Source Title">Durham University</cite></footer>
-								</blockquote>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="media testimonial">
-							<div class="media-left">
-								<img src="images/testimonial-3.png" alt="">
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">A Levels (2008 – 2010)</h3>
-								<blockquote>
-									<p>5 A Levels (2 A* and 3 A grades)</P>
-<p>A Levels achieved in English Literature, French, Geography, General Studies and Dance</p>
-									<footer><cite title="Source Title">Winstanley College, Wigan</cite></footer>
-								</blockquote>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="media testimonial">
-							<div class="media-left">
-								<img src="images/testimonial-3.png" alt="">
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">GCSEs (to 2008)</h3>
-								<blockquote>
-									<p>12 GCSE’s (7 A* and 5 A grades)</p>
-									<p>Received award for best GCSE results in school.</P>
-									<footer><cite title="Source Title">Holy Cross Catholic High School, Chorley</cite></footer>
-								</blockquote>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="media testimonial">
-							<div class="media-left">
-								<img src="images/testimonial-3.png" alt="">
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading"> Professional</h3>
-								<blockquote>
-									<p>Work experience dealing with client accounts for various firms. Experience covers private client departments, tax, audit, mergers and acquisitions as well as corporate and commercial departments  </p>
-									<footer>Companies include<cite title="Source Title"> KPMG, Addleshaw Goddard, BWA Water Additives and DWF.</cite></footer>
-								</blockquote>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="media testimonial">
-							<div class="media-left">
-								<img src="images/testimonial-3.png" alt="">
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">Web Development</h3>
-								<blockquote>
-									<p>Completed a web development course aimed at professionals including front end and back end web development as well as digital marketing.  Placed first in coding competition. Currently learning Python coding language at Twitter HQ.</p>
-									<footer> <cite title="Source Title">CF: G Professionals</cite></footer>
-								</blockquote>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		<!-- footer start -->
-		<!-- ================ -->
-		<footer id="footer">
-
-			<!-- .footer start -->
-			<!-- ================ -->
-			<div class="footer section">
-				<div class="container">
-					<h1 class="title text-center" id="contact">Contact </h1>
-					<div class="space"></div>
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="footer-content">
-								<p class="large">If you have any questions please contact me by email or phone and I will get back to you as soon as possible. </p>
-							</br>
-								<ul class="list-icons">
-									
-									<li><i class="fa fa-phone pr-10"></i> 0750 100 6728</li>
-									
-									<li><i class="fa fa-envelope-o pr-10"></i> elizabeth.cartmell@outlook.com</li>
-								</ul>
-								<h2 class="text-center">Thank you for reading.</h2>
-															</div>
-						</div> 
-					</div>
-			</div>
-		</div>
-				</div>
-			</div>
-			<!-- .footer end -->
-
-			<!-- .subfooter start -->
-			<!-- ================ -->
-			<div class="subfooter">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<p class="text-center">Copyright © 2016
-						</div>
-					</div>
-				</div> 
-			</div> 
-			<!-- .subfooter end -->
-
-		</footer>
-		<!-- footer end -->
-
-		<!-- JavaScript files placed at the end of the document so the pages load faster
-		================================================== -->
-		<!-- Jquery and Bootstap core js files -->
-		<script type="text/javascript" src="plugins/jquery.min.js"></script>
-		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-
-		<!-- Modernizr javascript -->
-		<script type="text/javascript" src="plugins/modernizr.js"></script>
-
-		<!-- Isotope javascript -->
-		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
-		
-		<!-- Backstretch javascript -->
-		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
-
-		<!-- Appear javascript -->
-		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
-
-		<!-- Initialization of Plugins -->
-		<script type="text/javascript" src="js/template.js"></script>
-
-		<!-- Custom Scripts -->
-		<script type="text/javascript" src="js/custom.js"></script>
-
-	</body>
+</script>
+  </body>
 </html>
+  </html> 
+
